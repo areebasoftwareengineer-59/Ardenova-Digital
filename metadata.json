@@ -1,0 +1,8 @@
+{
+  "name": "Ardenova Digital",
+  "description": "Independent international digital agency partnering with ambitious businesses across the USA, UAE, Saudi Arabia, UK, and worldwide to build powerful websites, e-commerce, and digital experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
