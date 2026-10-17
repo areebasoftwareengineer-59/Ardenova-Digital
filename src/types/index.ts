@@ -49,7 +49,7 @@ export interface InquiryFormData {
   companyName: string;
   country: string;
   service: string;
-  budget: string;
-  timeline: string;
+  budget?: string;
+  timeline?: string;
   details: string;
 }

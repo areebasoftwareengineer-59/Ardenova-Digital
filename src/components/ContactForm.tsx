@@ -14,8 +14,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialService = '' })
     companyName: '',
     country: 'United States',
     service: initialService || SERVICES[0].title,
-    budget: '$7,000 – $15,000 USD',
-    timeline: '1–2 Months',
     details: '',
   });
 
@@ -77,8 +75,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialService = '' })
           'Company / Brand': formData.companyName,
           'Target Region': formData.country,
           'Service Requested': formData.service,
-          'Budget Scope': formData.budget,
-          'Timeline': formData.timeline,
           'Project Brief': formData.details,
           '_subject': `New Project Inquiry: ${formData.companyName} (${formData.service})`,
           '_replyto': formData.businessEmail,
@@ -192,12 +188,12 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialService = '' })
                       <span className="font-semibold text-white">{submittedData.service}</span>
                     </div>
                     <div className="flex justify-between border-b border-[#222E48] pb-2">
-                      <span className="text-[#9399A8]">Budget Scope</span>
-                      <span className="font-semibold text-white">{submittedData.budget}</span>
+                      <span className="text-[#9399A8]">Company / Brand</span>
+                      <span className="font-semibold text-white">{submittedData.companyName}</span>
                     </div>
                     <div className="flex justify-between border-b border-[#222E48] pb-2">
-                      <span className="text-[#9399A8]">Timeline</span>
-                      <span className="font-semibold text-white">{submittedData.timeline}</span>
+                      <span className="text-[#9399A8]">Target Region</span>
+                      <span className="font-semibold text-white">{submittedData.country}</span>
                     </div>
                     <div>
                       <span className="block text-[#9399A8] mb-1">Project Brief</span>
@@ -219,8 +215,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialService = '' })
                           companyName: '',
                           country: 'United States',
                           service: initialService || SERVICES[0]?.title || 'Bespoke Web Development',
-                          budget: '$25,000 – $50,000',
-                          timeline: '4–8 Weeks',
                           details: '',
                         });
                       }}
@@ -350,48 +344,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ initialService = '' })
                       ))}
                     </select>
                   </div>
-
-                  {/* Row 4: Budget Scope & Desired Timeline */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="budget" className="block text-xs font-medium uppercase tracking-wider text-[#9399A8] mb-2">
-                        Estimated Budget
-                      </label>
-                      <select
-                        id="budget"
-                        name="budget"
-                        value={formData.budget}
-                        onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                        className="w-full px-4 py-3 bg-[#0D1220] border border-[#232A3B] rounded-lg text-sm text-white focus:outline-none focus:border-[#C7A66A] transition-colors cursor-pointer"
-                      >
-                        <option value="$3,000 – $7,000 USD">$3,000 – $7,000 USD</option>
-                        <option value="$7,000 – $15,000 USD">$7,000 – $15,000 USD</option>
-                        <option value="$15,000 – $30,000 USD">$15,000 – $30,000 USD</option>
-                        <option value="$30,000+ USD">$30,000+ USD</option>
-                        <option value="To Be Determined / Exploring Scope">To Be Determined / Exploring Scope</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label htmlFor="timeline" className="block text-xs font-medium uppercase tracking-wider text-[#9399A8] mb-2">
-                        Desired Timeline
-                      </label>
-                      <select
-                        id="timeline"
-                        name="timeline"
-                        value={formData.timeline}
-                        onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                        className="w-full px-4 py-3 bg-[#0D1220] border border-[#232A3B] rounded-lg text-sm text-white focus:outline-none focus:border-[#C7A66A] transition-colors cursor-pointer"
-                      >
-                        <option value="< 1 Month">Under 1 Month (Fast-track)</option>
-                        <option value="1–2 Months">1 – 2 Months (Standard)</option>
-                        <option value="2–4 Months">2 – 4 Months (Comprehensive)</option>
-                        <option value="Flexible / Long-term Strategy">Flexible / Long-term Strategy</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  {/* Row 5: Project Details */}
+                  {/* Row 4: Project Details */}
                   <div>
                     <label htmlFor="details" className="block text-xs font-medium uppercase tracking-wider text-[#9399A8] mb-2">
                       Project Details & Objectives <span className="text-[#C7A66A]">*</span>
