@@ -41,7 +41,9 @@ export const WorkPortfolio: React.FC<WorkPortfolioProps> = ({ onStartProjectForC
   const filterOptions = [
     { id: 'all', label: 'All Projects' },
     { id: 'Travel & Luxury Hospitality', label: 'Travel & Hospitality' },
-    { id: 'Luxury Brand & Studio', label: 'Luxury Brand & Studio' },
+    { id: 'Luxury Brand & Studio', label: 'Luxury Brands' },
+    { id: 'Hospitality & Fine Dining', label: 'Fine Dining' },
+    { id: 'Digital Agency & Engineering', label: 'Agency & Tech' },
     { id: 'Business & Growth Platform', label: 'Growth & Platforms' },
     { id: 'Web Application & SaaS', label: 'Web Apps & SaaS' },
   ];
@@ -73,7 +75,7 @@ export const WorkPortfolio: React.FC<WorkPortfolioProps> = ({ onStartProjectForC
           <div className="flex items-center gap-2">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FAF8F5] border border-[#E3DDD1] text-xs font-semibold text-[#111318] shadow-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>4 Verified Live Deployments</span>
+              <span>{PROJECTS.length} Verified Live Deployments</span>
             </div>
           </div>
         </div>

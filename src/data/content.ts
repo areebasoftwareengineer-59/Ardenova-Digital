@@ -3,6 +3,9 @@ import voyageurImg from '../assets/images/project_voyageur.png';
 import atelierImg from '../assets/images/project_atelier.png';
 import rentieImg from '../assets/images/project_rentie.png';
 import focusFlowImg from '../assets/images/project_focusflow.png';
+import tourTravelImg from '../assets/images/project_tour_travel.png';
+import ardenovaImg from '../assets/images/project_ardenova_digital.jpg';
+import kaoLahoreImg from '../assets/images/project_kao_lahore.jpg';
 
 
 export const BRAND = {
@@ -176,34 +179,6 @@ export const DIFFERENTIATORS = [
 
 export const PROJECTS: ProjectItem[] = [
   {
-    id: 'voyageur',
-    title: 'Voyageur',
-    typeLabel: 'Travel & Luxury Hospitality',
-    industry: 'Bespoke Expeditions & Architectural Retreats',
-    summary:
-      'An immersive luxury travel showcase featuring curated global expeditions, cinematic destination previews, architectural pavilions, and seamless private itinerary inquiries.',
-    challenge:
-      'Conveying the atmospheric wonder of remote sanctuaries and high-end experiential journeys while delivering fast, intuitive exploration on both mobile and desktop devices.',
-    solution:
-      'Engineered an editorial digital experience with responsive layout art direction, immersive journey previews, clear destination discovery, and responsive inquiry conduits.',
-    deliverables: [
-      'Bespoke travel brand experience & layout system',
-      'Editorial destination lookbooks & itinerary explorer',
-      'Mobile-optimized responsive booking inquiry flows',
-      'High-performance production deployment on Vercel',
-    ],
-    techStack: ['React', 'Next.js / Vercel', 'Tailwind CSS', 'Responsive UI'],
-    image: voyageurImg,
-    liveUrl: 'https://voyageur-website-areeba-c601.vercel.app/',
-    isDemonstration: false,
-    conceptHighlights: [
-      { label: 'Category', value: 'Travel & Hospitality' },
-      { label: 'Deployment', value: 'Live on Vercel' },
-      { label: 'Key Feature', value: 'Curated Itinerary Engine' },
-      { label: 'Platform', value: 'Production Web App' },
-    ],
-  },
-  {
     id: 'atelier',
     title: 'Atelier',
     typeLabel: 'Luxury Brand & Studio',
@@ -222,12 +197,96 @@ export const PROJECTS: ProjectItem[] = [
     ],
     techStack: ['React', 'Vercel Architecture', 'Tailwind CSS', 'Modern Frontend'],
     image: atelierImg,
-    liveUrl: 'https://atelier-navy-chi.vercel.app/',
+    liveUrl: 'https://atelier-eev4rmyeh-areeba-c601.vercel.app/',
     isDemonstration: false,
     conceptHighlights: [
       { label: 'Category', value: 'Luxury Fashion & Studio' },
       { label: 'Deployment', value: 'Live on Vercel' },
       { label: 'Key Feature', value: 'Editorial Flagship Lookbook' },
+      { label: 'Platform', value: 'Production Web App' },
+    ],
+  },
+  {
+    id: 'ardenova-digital',
+    title: 'Ardenova Digital',
+    typeLabel: 'Digital Agency & Engineering',
+    industry: 'Bespoke Web Development & Digital Strategy',
+    summary:
+      'An executive digital agency flagship and bespoke engineering portfolio crafted with dark midnight aesthetics, champagne gold accents, structured client intake pipelines, and technical transparency.',
+    challenge:
+      'Establishing an authentic, commanding agency presence that reflects enterprise rigor, design craftsmanship, and long-term client partnership without corporate genericism.',
+    solution:
+      'Designed an editorial web architecture featuring fluid typography, clear service deliverables, milestone-based processes, and high-conversion client communication conduits.',
+    deliverables: [
+      'Executive digital agency design system & brand language',
+      'High-performance production frontend on Vercel',
+      'Interactive project portfolio & live case study explorer',
+      'Direct client intake & automated consultation workflows',
+    ],
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel Architecture'],
+    image: ardenovaImg,
+    liveUrl: 'https://ardenova-digital-bsjzoddcq-areeba-c601.vercel.app/',
+    isDemonstration: false,
+    conceptHighlights: [
+      { label: 'Category', value: 'Agency & Digital Studio' },
+      { label: 'Deployment', value: 'Live on Vercel' },
+      { label: 'Key Feature', value: 'Executive Flagship Architecture' },
+      { label: 'Platform', value: 'Production Web App' },
+    ],
+  },
+  {
+    id: 'tour-travel',
+    title: 'Tour & Travel Ventures',
+    typeLabel: 'Travel & Luxury Hospitality',
+    industry: 'Bespoke Expeditions & Boutique Adventures',
+    summary:
+      'A luxury boutique travel platform offering hand-crafted small-group journeys, curated departures across 40+ global destinations, and an interactive expedition search engine.',
+    challenge:
+      'Inspiring high-intent travelers while simplifying complex expedition dates, group sizes, departure filters, and itinerary inquiries into an effortless mobile and desktop experience.',
+    solution:
+      'Engineered an evocative coastal visual design system paired with an instant journey discovery engine, departure date pickers, and curated boutique lodging showcases.',
+    deliverables: [
+      'Bespoke expedition brand identity & UI architecture',
+      'Interactive departure discovery & trip duration filter',
+      'High-conversion reservation & travel consultation conduit',
+      'Cloud-optimized production deployment on Vercel',
+    ],
+    techStack: ['React', 'Next.js / Vercel', 'Tailwind CSS', 'Itinerary Engine'],
+    image: tourTravelImg,
+    liveUrl: 'https://tour-and-travel-ventures-vjxt-hpul54oyh-areeba-c601.vercel.app/',
+    isDemonstration: false,
+    conceptHighlights: [
+      { label: 'Category', value: 'Travel & Hospitality' },
+      { label: 'Deployment', value: 'Live on Vercel' },
+      { label: 'Key Feature', value: 'Departure Discovery Engine' },
+      { label: 'Platform', value: 'Production Web App' },
+    ],
+  },
+  {
+    id: 'kao-lahore',
+    title: 'KAO Lahore',
+    typeLabel: 'Hospitality & Fine Dining',
+    industry: 'Premium Chinese Cuisine & Culinary Arts',
+    summary:
+      'An ultra-luxury fine dining digital presence in Lahore showcasing authentic Chinese culinary traditions, artisan handmade dim sum, Peking duck, and private dining reservation systems.',
+    challenge:
+      'Translating the sensory richness and regal prestige of high-end authentic Chinese gastronomy into a digital environment that drives table bookings and VIP private dining reservations.',
+    solution:
+      'Created an opulent obsidian and warm champagne aesthetic featuring mouth-watering culinary photography, seasonal menus, private dining walkthroughs, and seamless reservation flows.',
+    deliverables: [
+      'Luxury fine dining brand design & typography system',
+      'Interactive culinary menu & tasting course showcase',
+      'VIP private dining room inquiry & table reservation conduit',
+      'High-speed responsive web experience deployed on Vercel',
+    ],
+    techStack: ['React', 'Vercel Cloud', 'Tailwind CSS', 'Fine Dining Experience'],
+    image: kaoLahoreImg,
+    liveUrl: 'https://kao-lahore-premium-chinese-cuisine-tmlh-n50urukp4-areeba-c601.vercel.app/',
+    isDemonstration: false,
+    conceptHighlights: [
+      { label: 'Category', value: 'Hospitality & Fine Dining' },
+      { label: 'Deployment', value: 'Live on Vercel' },
+      { label: 'Key Feature', value: 'VIP Reservation Conduit' },
       { label: 'Platform', value: 'Production Web App' },
     ],
   },
@@ -284,6 +343,34 @@ export const PROJECTS: ProjectItem[] = [
       { label: 'Category', value: 'Productivity SaaS' },
       { label: 'Deployment', value: 'Live on Vercel' },
       { label: 'Key Feature', value: 'Deep-Work Sprint Engine' },
+      { label: 'Platform', value: 'Production Web App' },
+    ],
+  },
+  {
+    id: 'voyageur',
+    title: 'Voyageur Expeditions',
+    typeLabel: 'Travel & Luxury Hospitality',
+    industry: 'Bespoke Expeditions & Architectural Retreats',
+    summary:
+      'An immersive luxury travel showcase featuring curated global expeditions, cinematic destination previews, architectural pavilions, and seamless private itinerary inquiries.',
+    challenge:
+      'Conveying the atmospheric wonder of remote sanctuaries and high-end experiential journeys while delivering fast, intuitive exploration on both mobile and desktop devices.',
+    solution:
+      'Engineered an editorial digital experience with responsive layout art direction, immersive journey previews, clear destination discovery, and responsive inquiry conduits.',
+    deliverables: [
+      'Bespoke travel brand experience & layout system',
+      'Editorial destination lookbooks & itinerary explorer',
+      'Mobile-optimized responsive booking inquiry flows',
+      'High-performance production deployment on Vercel',
+    ],
+    techStack: ['React', 'Next.js / Vercel', 'Tailwind CSS', 'Responsive UI'],
+    image: voyageurImg,
+    liveUrl: 'https://voyageur-website-areeba-c601.vercel.app/',
+    isDemonstration: false,
+    conceptHighlights: [
+      { label: 'Category', value: 'Travel & Hospitality' },
+      { label: 'Deployment', value: 'Live on Vercel' },
+      { label: 'Key Feature', value: 'Curated Itinerary Engine' },
       { label: 'Platform', value: 'Production Web App' },
     ],
   },

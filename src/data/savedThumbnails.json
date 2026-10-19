@@ -1,6 +1,9 @@
 {
-  "voyageur": "/projects/project_voyageur.png",
   "atelier": "/projects/project_atelier.png",
+  "ardenova-digital": "/projects/project_ardenova_digital.jpg",
+  "tour-travel": "/projects/project_tour_travel.png",
+  "kao-lahore": "/projects/project_kao_lahore.jpg",
   "rentie-growth-hub": "/projects/project_rentie.png",
-  "focus-flow": "/projects/project_focusflow.png"
+  "focus-flow": "/projects/project_focusflow.png",
+  "voyageur": "/projects/project_tour_travel.png"
 }
