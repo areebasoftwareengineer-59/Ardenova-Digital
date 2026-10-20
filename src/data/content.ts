@@ -1,10 +1,10 @@
 import { ServiceItem, ProjectItem, ProcessStep, FAQItem } from '../types';
-import voyageurImg from '../assets/images/project_voyageur.png';
+import areebaPortfolioImg from '../assets/images/project_areeba_portfolio.png';
 import atelierImg from '../assets/images/project_atelier.png';
+import voyageurImg from '../assets/images/project_voyageur.png';
 import rentieImg from '../assets/images/project_rentie.png';
 import focusFlowImg from '../assets/images/project_focusflow.png';
 import tourTravelImg from '../assets/images/project_tour_travel.png';
-import ardenovaImg from '../assets/images/project_ardenova_digital.jpg';
 import kaoLahoreImg from '../assets/images/project_kao_lahore.jpg';
 
 
@@ -179,6 +179,34 @@ export const DIFFERENTIATORS = [
 
 export const PROJECTS: ProjectItem[] = [
   {
+    id: 'areeba-portfolio',
+    title: 'Areeba Munir — Portfolio',
+    typeLabel: 'Software & Creative Engineering',
+    industry: 'Interactive Portfolio & Creative Technology',
+    summary:
+      'The personal interactive software engineering and design portfolio of Areeba Munir, featuring cinematic starry particle animations, futuristic design language, and live project deployments.',
+    challenge:
+      'Unifying academic excellence, full-stack software development, DBMS expertise, and modern UI/UX design into an immersive, futuristic web experience that captivates visitors.',
+    solution:
+      'Built a sleek, dark-mode cosmic canvas with particle physics, dynamic project showcases, smooth navigation, and optimized production hosting on Vercel.',
+    deliverables: [
+      'Cinematic interactive identity & particle canvas UI',
+      'Curated showcase of 13+ software & web development systems',
+      'Technical spotlights across SE, DBMS, UI/UX & React',
+      'Production deployment on Vercel with responsive mobile performance',
+    ],
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel Architecture', 'Interactive Web'],
+    image: areebaPortfolioImg,
+    liveUrl: 'https://areeba-munir-portfolio-7de2.vercel.app/',
+    isDemonstration: false,
+    conceptHighlights: [
+      { label: 'Category', value: 'Software Engineering & UI/UX' },
+      { label: 'Deployment', value: 'Live on Vercel' },
+      { label: 'Key Feature', value: 'Interactive Cinematic Canvas' },
+      { label: 'Platform', value: 'Production Web App' },
+    ],
+  },
+  {
     id: 'atelier',
     title: 'Atelier',
     typeLabel: 'Luxury Brand & Studio',
@@ -207,58 +235,58 @@ export const PROJECTS: ProjectItem[] = [
     ],
   },
   {
-    id: 'ardenova-digital',
-    title: 'Ardenova Digital',
-    typeLabel: 'Digital Agency & Engineering',
-    industry: 'Bespoke Web Development & Digital Strategy',
+    id: 'voyageur',
+    title: 'Voyageur .co',
+    typeLabel: 'Travel & Luxury Hospitality',
+    industry: 'Curated Global Expeditions & Boutique Journeys',
     summary:
-      'An executive digital agency flagship and bespoke engineering portfolio crafted with dark midnight aesthetics, champagne gold accents, structured client intake pipelines, and technical transparency.',
+      'A boutique global travel platform offering hand-crafted small-group journeys across 40+ destinations, departure discovery for 240+ itineraries, and bespoke travel reservations.',
     challenge:
-      'Establishing an authentic, commanding agency presence that reflects enterprise rigor, design craftsmanship, and long-term client partnership without corporate genericism.',
+      'Presenting multi-destination itineraries, departure date filters, and boutique stay showcases with clean editorial elegance and effortless booking flows.',
     solution:
-      'Designed an editorial web architecture featuring fluid typography, clear service deliverables, milestone-based processes, and high-conversion client communication conduits.',
+      'Architected an immersive travel discovery experience with instant departure date pickers, destination filters, traveler group size selection, and direct booking conduits.',
     deliverables: [
-      'Executive digital agency design system & brand language',
-      'High-performance production frontend on Vercel',
-      'Interactive project portfolio & live case study explorer',
-      'Direct client intake & automated consultation workflows',
+      'Global expedition discovery platform & UI system',
+      'Search engine for 240+ departure dates & itineraries',
+      'Curated boutique lodging & local guide showcases',
+      'High-speed responsive web deployment on Vercel',
     ],
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel Architecture'],
-    image: ardenovaImg,
-    liveUrl: 'https://ardenova-digital-bsjzoddcq-areeba-c601.vercel.app/',
+    image: voyageurImg,
+    liveUrl: 'https://voyageur-website-areeba-c601.vercel.app/',
     isDemonstration: false,
     conceptHighlights: [
-      { label: 'Category', value: 'Agency & Digital Studio' },
+      { label: 'Category', value: 'Boutique Global Journeys' },
       { label: 'Deployment', value: 'Live on Vercel' },
-      { label: 'Key Feature', value: 'Executive Flagship Architecture' },
+      { label: 'Key Feature', value: '240+ Departures Search Engine' },
       { label: 'Platform', value: 'Production Web App' },
     ],
   },
   {
     id: 'tour-travel',
     title: 'Tour & Travel Ventures',
-    typeLabel: 'Travel & Luxury Hospitality',
-    industry: 'Bespoke Expeditions & Boutique Adventures',
+    typeLabel: 'Travel & Tourism Adventure',
+    industry: 'Pakistan Expeditions & Adventure Tourism',
     summary:
-      'A luxury boutique travel platform offering hand-crafted small-group journeys, curated departures across 40+ global destinations, and an interactive expedition search engine.',
+      'An adventure and northern expedition travel portal showcasing Pakistan’s breathtaking mountain valleys, curated group and family packages, WhatsApp consultation conduits, and verified reviews.',
     challenge:
-      'Inspiring high-intent travelers while simplifying complex expedition dates, group sizes, departure filters, and itinerary inquiries into an effortless mobile and desktop experience.',
+      'Building a trusted, conversion-optimized adventure travel platform that connects travelers directly with regional guides, custom packages, and instant booking consultation.',
     solution:
-      'Engineered an evocative coastal visual design system paired with an instant journey discovery engine, departure date pickers, and curated boutique lodging showcases.',
+      'Designed an inspiring mountain-adventure portal with instant WhatsApp booking integration, 5-star traveler testimonial showcases, detailed tour packages, and seamless mobile inquiry forms.',
     deliverables: [
-      'Bespoke expedition brand identity & UI architecture',
-      'Interactive departure discovery & trip duration filter',
-      'High-conversion reservation & travel consultation conduit',
-      'Cloud-optimized production deployment on Vercel',
+      'Adventure tourism portal & brand design system',
+      'Direct WhatsApp booking conduit & instant trip inquiry',
+      'Curated northern valley packages & itinerary showcases',
+      'Production-ready responsive deployment on Vercel',
     ],
-    techStack: ['React', 'Next.js / Vercel', 'Tailwind CSS', 'Itinerary Engine'],
+    techStack: ['React', 'Next.js / Vercel', 'Tailwind CSS', 'Adventure Portal'],
     image: tourTravelImg,
     liveUrl: 'https://tour-and-travel-ventures-vjxt-hpul54oyh-areeba-c601.vercel.app/',
     isDemonstration: false,
     conceptHighlights: [
-      { label: 'Category', value: 'Travel & Hospitality' },
+      { label: 'Category', value: 'Adventure & Valley Expeditions' },
       { label: 'Deployment', value: 'Live on Vercel' },
-      { label: 'Key Feature', value: 'Departure Discovery Engine' },
+      { label: 'Key Feature', value: 'WhatsApp Booking Conduit' },
       { label: 'Platform', value: 'Production Web App' },
     ],
   },
@@ -343,34 +371,6 @@ export const PROJECTS: ProjectItem[] = [
       { label: 'Category', value: 'Productivity SaaS' },
       { label: 'Deployment', value: 'Live on Vercel' },
       { label: 'Key Feature', value: 'Deep-Work Sprint Engine' },
-      { label: 'Platform', value: 'Production Web App' },
-    ],
-  },
-  {
-    id: 'voyageur',
-    title: 'Voyageur Expeditions',
-    typeLabel: 'Travel & Luxury Hospitality',
-    industry: 'Bespoke Expeditions & Architectural Retreats',
-    summary:
-      'An immersive luxury travel showcase featuring curated global expeditions, cinematic destination previews, architectural pavilions, and seamless private itinerary inquiries.',
-    challenge:
-      'Conveying the atmospheric wonder of remote sanctuaries and high-end experiential journeys while delivering fast, intuitive exploration on both mobile and desktop devices.',
-    solution:
-      'Engineered an editorial digital experience with responsive layout art direction, immersive journey previews, clear destination discovery, and responsive inquiry conduits.',
-    deliverables: [
-      'Bespoke travel brand experience & layout system',
-      'Editorial destination lookbooks & itinerary explorer',
-      'Mobile-optimized responsive booking inquiry flows',
-      'High-performance production deployment on Vercel',
-    ],
-    techStack: ['React', 'Next.js / Vercel', 'Tailwind CSS', 'Responsive UI'],
-    image: voyageurImg,
-    liveUrl: 'https://voyageur-website-areeba-c601.vercel.app/',
-    isDemonstration: false,
-    conceptHighlights: [
-      { label: 'Category', value: 'Travel & Hospitality' },
-      { label: 'Deployment', value: 'Live on Vercel' },
-      { label: 'Key Feature', value: 'Curated Itinerary Engine' },
       { label: 'Platform', value: 'Production Web App' },
     ],
   },

@@ -108,6 +108,17 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry }) => {
             >
               Contact
             </a>
+            <a
+              href="https://areeba-munir-portfolio-7de2.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold tracking-wider text-[#C7A66A] bg-[#C7A66A]/10 hover:bg-[#C7A66A]/20 hover:text-white border border-[#C7A66A]/30 rounded-full transition-all duration-200 whitespace-nowrap shrink-0 group shadow-sm shadow-[#C7A66A]/10 ml-1"
+              title="Areeba Munir — Software Engineering & Design Portfolio"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C7A66A] animate-pulse" />
+              <span>Areeba's Portfolio</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#C7A66A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
           </nav>
 
           {/* Zone 3: 1 primary action */}
@@ -172,6 +183,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenInquiry }) => {
               className="py-2 px-3 rounded hover:bg-[#141A2D] hover:text-[#C7A66A] transition-colors"
             >
               Contact
+            </a>
+            <a
+              href="https://areeba-munir-portfolio-7de2.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between py-2.5 px-3 rounded-lg bg-[#C7A66A]/10 border border-[#C7A66A]/25 text-[#C7A66A] hover:text-white font-medium text-sm transition-colors mt-1"
+            >
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#C7A66A] animate-pulse" />
+                <span>Areeba's Portfolio</span>
+              </div>
+              <ArrowUpRight className="w-4 h-4" />
             </a>
             <div className="pt-4 border-t border-[#232A3B]">
               <button

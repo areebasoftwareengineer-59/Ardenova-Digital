@@ -28,7 +28,7 @@ export const WorkPortfolio: React.FC<WorkPortfolioProps> = ({ onStartProjectForC
             valid[k] = v;
           }
         }
-        return { ...(savedThumbnailsOnServer as Record<string, string>), ...valid };
+        return { ...valid, ...(savedThumbnailsOnServer as Record<string, string>) };
       }
     } catch {
       // Ignore
@@ -38,15 +38,17 @@ export const WorkPortfolio: React.FC<WorkPortfolioProps> = ({ onStartProjectForC
 
 
 
+  const availableTypes = new Set(PROJECTS.map((p) => p.typeLabel));
   const filterOptions = [
     { id: 'all', label: 'All Projects' },
-    { id: 'Travel & Luxury Hospitality', label: 'Travel & Hospitality' },
+    { id: 'Software & Creative Engineering', label: 'Software & Engineering' },
     { id: 'Luxury Brand & Studio', label: 'Luxury Brands' },
+    { id: 'Travel & Luxury Hospitality', label: 'Travel & Hospitality' },
+    { id: 'Travel & Tourism Adventure', label: 'Adventure & Travel' },
     { id: 'Hospitality & Fine Dining', label: 'Fine Dining' },
-    { id: 'Digital Agency & Engineering', label: 'Agency & Tech' },
     { id: 'Business & Growth Platform', label: 'Growth & Platforms' },
     { id: 'Web Application & SaaS', label: 'Web Apps & SaaS' },
-  ];
+  ].filter((tab) => tab.id === 'all' || availableTypes.has(tab.id));
 
   const filteredProjects = selectedFilter === 'all'
     ? PROJECTS
